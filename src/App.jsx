@@ -1,22 +1,18 @@
-import { useState } from 'react'
-import logo from './assets/logo.jpeg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainPage from "./pages/main-page/MainPage.jsx";
+import Registration from "./pages/registration-page/Registration.jsx";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={logo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>gess busters</h1>
-     
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />}/>
+        <Route path="registration" element={<Registration/>}/>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
