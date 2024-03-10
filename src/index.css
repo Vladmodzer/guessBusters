@@ -1,8 +1,8 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  box-sizing: border-box;
   /* its can dy dark */
   color-scheme: light;
   font-synthesis: none;
