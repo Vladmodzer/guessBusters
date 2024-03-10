@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 // import { useDispatch } from 'react-redux';
 // import { setProps } from '../../redux/actions.js';
-import styles from "./MainPage.module.css";
+import styles from "./HomePage.module.css";
 
 function MainPage() {
   // const dispatch = useDispatch();
