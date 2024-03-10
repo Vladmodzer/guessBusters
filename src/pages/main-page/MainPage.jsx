@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 // import { useDispatch } from 'react-redux';
 // import { setProps } from '../../redux/actions.js';
-import "./MainPage.css";
+import styles from "./MainPage.module.css";
 
 function MainPage() {
   // const dispatch = useDispatch();
@@ -13,7 +13,7 @@ function MainPage() {
   // };
 
   return (
-    <div className="main-wrapper">
+    <div className={styles.main_wrapper}>
       <p> MainPage</p>
       <Link to={"registration"}>to the registration</Link>
       <p>link</p>
