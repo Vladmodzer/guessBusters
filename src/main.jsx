@@ -9,12 +9,13 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/home/HomePage.jsx";
 import Registration from "./pages/registration/Registration.jsx";
+import NotFound from "./pages/notFound/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
-    errorElement: <div>404 Not Found</div>,
+    errorElement: <NotFound/>,
   },
   {
     path: "/registration",
