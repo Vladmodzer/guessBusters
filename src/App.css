@@ -1,10 +1,10 @@
 
 :root {
-  --main-color: rgb(61, 89, 122);
-  --main-btn-color: rgb(4, 255, 255);
-  --main-text-color: rgb(255, 255, 255);
-  --second-color: rgb(7, 10, 100);
-  --party-btn-negative-color: rgb(255, 0, 0);
-  --party-btn-positive-color: rgb(0, 255, 56);
+  --primary-color: rgb(61, 89, 122);
+  --highlight-color: rgb(4, 255, 255);
+  --text-color: rgb(255, 255, 255);
+  --secondary-color: rgb(7, 10, 100);
+  --negative-color: rgb(255, 0, 0);
+  --positive-color: rgb(0, 255, 56);
+  --partybg-color: rgb(255, 255, 255);
 }
-

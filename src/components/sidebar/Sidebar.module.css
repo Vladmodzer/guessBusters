@@ -11,3 +11,14 @@
   height: 80px;
   width: 100px;
 }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.span svg {
+  stroke: green;
+  fill: var(--main-text-color);
+  color: var();
+}
