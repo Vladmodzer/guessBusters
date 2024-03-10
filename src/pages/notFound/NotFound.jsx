@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './NotFound.module.css'
 
 const NotFound = () => {
   return (
     <div>
-      <button ><Link to="/">Back to Home</Link></button>
+      <button className={styles.btns}><Link to="/" >Back to Home</Link></button>
     </div>
   )
 }

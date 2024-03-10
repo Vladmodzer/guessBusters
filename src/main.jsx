@@ -7,14 +7,14 @@ import store from "./redux/store.js";
 import Rules from "./pages/rules/Rules.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/home/HomePage.jsx";
+import Home from "./pages/home/Home.jsx";
 import Registration from "./pages/registration/Registration.jsx";
 import NotFound from "./pages/notFound/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <Home />,
     errorElement: <NotFound/>,
   },
   {
