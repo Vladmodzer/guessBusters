@@ -1,0 +1,13 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: block;
+}
+
+.logo {
+  height: 80px;
+  width: 100px;
+}

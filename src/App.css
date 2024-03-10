@@ -7,9 +7,4 @@
   --party-btn-negative-color: rgb(255, 0, 0);
   --party-btn-positive-color: rgb(0, 255, 56);
 }
-a {
-  text-decoration: none;
-  &:hover {
-    opacity: 0.5;
-  }
-}
+
