@@ -7,6 +7,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Rules from "./pages/rules/Rules.jsx";
 import Home from "./pages/home/Home.jsx";
+import Profile from "./pages/profile/Profile.jsx";
 import Registration from "./pages/registration/Registration.jsx";
 import NotFound from "./pages/notFound/NotFound.jsx";
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/rules",
     element: <Rules />,
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
   }
 ]);
 

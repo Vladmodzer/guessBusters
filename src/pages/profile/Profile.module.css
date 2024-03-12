@@ -1,0 +1,10 @@
+.main_wrapper {
+    max-width: 1440px;
+    position: relative;
+  }
+
+.test {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}

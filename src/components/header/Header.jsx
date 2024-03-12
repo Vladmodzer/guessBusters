@@ -1,10 +1,13 @@
-import "./Header.module.css";
+import { Link } from "react-router-dom";
+import styles from "./Header.module.css";
 
 import React from 'react'
 
 const Header = () => {
-  return (
-    <div>Header</div>
+  return (    
+    <div className={styles.link}>
+        <Link to="/profile">profile</Link>
+    </div>    
   )
 }
 
