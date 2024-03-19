@@ -1,9 +1,13 @@
-import styles from './Party.module.css'
+import { Link } from "react-router-dom";
+import styles from "./Party.module.css";
 
 const Party = () => {
   return (
-    <div>Party</div>
-  )
-}
+    <div>
+      <p>Party</p>
+      <Link to={"/"}>back to home</Link>
+    </div>
+  );
+};
 
-export default Party
+export default Party;
