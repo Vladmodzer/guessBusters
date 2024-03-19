@@ -1,5 +1,9 @@
 .link {
     display: flex;
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: clamp(12px,4vw,56px);
+}
+.profile_svg{
+    width: clamp(20px,2vw,50px);
+   
 }
