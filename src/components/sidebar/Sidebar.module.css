@@ -2,13 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   content: "";
   top: 0;
   left: 0;
-  width: 200px;
+  width: 10%;
   height: 100vh;
   background: var(--secondary-color);
+  z-index: 1;
+  @media(max-width: 868px){
+    display: none;
+  }
+
 }
 
 .link {
@@ -16,8 +21,7 @@
 }
 
 .logo {
-  height: 95px;
-  width: 130px;
+  width: clamp(30px,7vw,120px);
   margin-top: 18px;
   border-radius: 17px;
 }
@@ -42,5 +46,11 @@
     stroke: var(--highlight-color);
     fill: none;
     stroke-width: 1;
+  }
+}
+.sideBar_link {
+  font-size: clamp(14px,1vw,16px);
+  @media(max-width: 1277px){
+    flex-direction: column;
   }
 }
