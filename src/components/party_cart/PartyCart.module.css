@@ -1,0 +1,24 @@
+.party_cart {
+  height: 17%;
+  background: white;
+  border-radius: 11px;
+  width: 87%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+}
+.cross {
+  width: 20px;
+
+}
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  &:hover {
+    background: var(--primary-color);
+  }
+}

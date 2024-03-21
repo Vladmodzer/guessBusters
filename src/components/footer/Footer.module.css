@@ -1,0 +1,19 @@
+.footer_link {
+    color:var( --partybg-color) ;
+    font-size: clamp(14px,1vw,20px);
+    display: flex;
+}
+.lincs_box,.logo_box {
+    display: flex;
+    align-items: center;
+    gap: clamp(14px,4vw,47px);
+}
+.footer_logo {
+    width: clamp(35px,4vw,67px);
+    border-radius: 10px;
+}
+.lincs_box {
+    @media(max-width: 868px){
+        display: none;
+      }
+}
