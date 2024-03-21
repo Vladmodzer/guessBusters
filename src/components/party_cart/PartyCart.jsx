@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import styles from "./PartyCart.module.css";
 
-function PartyCart() {
+function PartyCart({setShowPartyCart}) {
+  const handleCreatePary = () => {
+    setShowPartyCart(false); 
+  }
   return (
     <Link className={styles.party_cart}>
       <p>{"PartyCart"}</p>
       <p>{3}</p>
-      <button className={styles.button}>
+      <button onClick={handleCreatePary} className={styles.button}>
         <svg
           className={styles.cross}
           fill="none"

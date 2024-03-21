@@ -1,13 +1,10 @@
 import styles from "./Sidebar.module.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
-import { useState } from "react";
 
 const Sidebar = ({setShowPartyCart}) => {
-  const [showPartyCart, setshowPartyCart] = useState(false);
 
   const handleCreatePary = () => {
-    setshowPartyCart(true);
     setShowPartyCart(true); 
   }
  

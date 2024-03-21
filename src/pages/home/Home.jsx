@@ -8,14 +8,13 @@ import { useEffect, useState } from "react";
 
 function Home() {
   const [showPartyCart, setShowPartyCart] = useState(false);
-
   return (
     <div className="page_wrapper">
       <Sidebar setShowPartyCart={setShowPartyCart}/>
       <div className="page">
         <Header />
         <main className={styles.home_main}>
-          {showPartyCart && <PartyCart />}
+          {showPartyCart && <PartyCart setShowPartyCart={setShowPartyCart} />}
         </main>
         <Footer />
       </div>
