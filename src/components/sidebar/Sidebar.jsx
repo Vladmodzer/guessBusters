@@ -2,6 +2,7 @@ import styles from "./Sidebar.module.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
 
+
 const Sidebar = ({setShowPartyCart}) => {
 
   const handleCreatePary = () => {

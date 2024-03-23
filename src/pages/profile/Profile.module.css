@@ -1,10 +1,210 @@
 .main_wrapper {
-    max-width: 1440px;
-    position: relative;
-  }
+  max-width: 1440px;
+  position: relative;
+}
 
-.test {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
+.profile_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  padding-bottom: 43px;
+}
+
+.bg {
+  width: 100%;
+  height: 240px;
+  background: url(../../assets/bgmistery.png);
+}
+
+.user_data {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 48px 27px 222px;
+  padding: 0px 48px 0px 222px;
+  margin-bottom: 50px;
+}
+
+.user_data:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -69px;
+  left: 24px;
+  width: 170px;
+  height: 170px;
+  background: url(../../assets/userOne.png);
+}
+
+.user_data_block {
+  display: flex;
+  align-items: center;
+}
+
+.name_loc {
+  display: flex;
+  flex-direction: column;
+  color: lightgray;
+
+}
+.user_name {
+  font-size: 40px;
+  font-weight: bold;
+
+}
+.user_loc {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 24px;
+}
+.user_loc:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  background: url(../../assets/location_icon.svg);
+}
+
+.user_email {
+  margin-left: 34px;
+  background-color: white;
+  border-radius: 11px;
+  color: darkblue;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 37px;
+  padding: 0 16px;
+  text-align: center;
+  
+}
+.edit_btn {
+  display: inline-block;	
+  margin-left: 34px;
+	box-sizing: border-box;
+  line-height: 39px;
+	padding: 0 14px;
+  border: 1px solid var(--highlight-color);
+  border-radius: 7px;
+  color: var(--highlight-color);
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.edit_btn:hover {
+	transition: all 0.2s;
+	opacity: .7;
+}
+.edit_btn:active {
+	background-color: var(--highlight-color);
+  color: var(--primary-color);
+}
+
+.user_info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 27px 48px 27px 26px;
+  padding: 0 48px 0 26px;
+  gap: 24px 13px;
+}
+.user_stat {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: darkblue;
+  flex-grow: 1;
+  border-radius: 11px;
+  padding: 35px 30px;
+  font-size: 32px;
+  font-weight: bold;
+  gap: 28px;
+}
+.user_lang {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: darkblue;
+  flex-grow: 3;
+  border-radius: 11px;
+  padding: 35px 30px;
+  font-size: 32px;
+  font-weight: bold;
+  gap: 25px;
+}
+
+.lang_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+.info_title form {
+  position: relative;
+}
+.info_title form::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 24px;
+  right: -7px;
+  width: 16px;
+  height: 16px;
+  background: url(../../assets/arrow_down.svg);
+  background-repeat: no-repeat;
+}
+
+.info_title select {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.stat_item {
+  font-size: 24px;
+}
+.cat_title {  
+  margin-bottom: 11px;
+}
+.lang_category {
+  font-size: 24px;
+  font-weight: bold;
+}
+.category_list {
+  display: flex;
+  gap: 4px 31px;
+  flex-wrap: wrap;
+}
+.category_item {
+  padding-left: 42px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+}
+.category_item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width: 35px;
+  height: 20px;
+  background: url(../../assets/Flag_of_the_UK.svg);
 }
