@@ -1,0 +1,56 @@
+
+.user_name_box,
+.password_box {
+  display: flex;
+  flex-direction: column;
+  width: 76%;
+
+
+}
+.remember_box {
+    display: flex;
+    justify-content: space-between;
+    width: 76%;
+    @media(max-width:768px) {
+        flex-direction: column;
+       gap: 10px;
+    }
+}
+.radio_btn {
+  border: 1px solid var(--highlight-color);
+  border-radius: 12px;
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+   ;
+    opacity: 0;
+  }
+  &:checked::after {
+    opacity: 1;
+  }
+}
+.rememberMe {
+    cursor: pointer;
+}
+.login {
+    height: 50%;
+}
+.radio_box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.login_tittle {
+    font-size: clamp(25px, 4vw, 40px);
+    width: 76%;
+    text-align: start;
+    margin: 0;
+}

@@ -6,4 +6,25 @@
   --negative-color: rgb(255, 0, 0);
   --positive-color: rgb(0, 255, 56);
   --partybg-color: rgb(255, 255, 255);
+  --indicator-color: rgb(224, 225, 227);
 }
+.common_registration_styles {
+  background: var(--secondary-color);
+  width: 41%;
+  border-radius: 10px;
+  color: var(--partybg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: clamp(12px, 1vw, 14px);
+  min-width: 290px;
+  z-index: 0;
+  padding: 30px 0;
+}
+.common_registration_inputs {
+  border: 2px solid var(--highlight-color);
+  border-radius: 8px;
+  background: var(--secondary-color);
+  height: clamp(35px, 4vw, 50px);
+} 

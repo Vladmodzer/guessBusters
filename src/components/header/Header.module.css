@@ -1,9 +1,28 @@
 .link {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: clamp(12px,4vw,56px);
+  display: flex;
+  justify-content: flex-end;
+  padding-right: clamp(12px, 4vw, 56px);
+  @media (max-width: 868px) {
+    justify-content: space-between;
+  }
 }
-.profile_svg{
-    width: clamp(20px,2vw,50px);
-   
+.profile_svg {
+  width: clamp(20px, 2vw, 50px);
+}
+.header_burger {
+  display: none;
+  @media (max-width: 868px) {
+    display: block;
+  }
+  padding-left: clamp(12px, 4vw, 56px);
+  &:hover{
+    opacity: 0.5;
+  }
+}
+.burger_svg {
+  width: clamp(20px, 2vw, 50px);
+  stroke: var(--highlight-color);
+}
+.link_justifyContentEnd {
+  justify-content: end !important;
 }
