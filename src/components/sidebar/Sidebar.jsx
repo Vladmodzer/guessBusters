@@ -20,7 +20,7 @@ const Sidebar = ({ setShowPartyCart,isburgerMenu }) => {
 
   return (
     <>
-    {<div className={`${styles.sidebar} ${isMediaQueryMatched ? 'hidden' : ''}${isburgerMenu ? '' : 'hidden'} ${isburgerMenu ? "show_flex" : ""}`} >
+    <div className={`${styles.sidebar} ${isMediaQueryMatched ? 'hidden' : ''}${isburgerMenu ? '' : 'hidden'} ${isburgerMenu ? "show_flex" : ""}`} >
       <Link className={styles.link} to="/">
         <img className={styles.logo} src={logo} alt="logo" />
       </Link>
@@ -72,7 +72,7 @@ const Sidebar = ({ setShowPartyCart,isburgerMenu }) => {
           </Link>
         </li>
       </ul>
-    </div>}
+    </div>
     </>
   );
 };
