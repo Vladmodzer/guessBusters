@@ -9,21 +9,22 @@ import store from "./redux/store/store.js";
 import Rules from "./pages/rules/Rules.jsx";
 import Home from "./pages/home/Home.jsx";
 import Profile from "./pages/profile/Profile.jsx";
-import Registration from "./pages/registration/Registration.jsx";
 import NotFound from "./pages/notFound/NotFound.jsx";
 import Party from "./pages/party/Party.jsx";
 import { Provider } from "react-redux";
+import Registration from "./pages/registration/Registration.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home className='page'/>,
-    errorElement: <NotFound />,
+    element: <Registration/>,
   },
   {
-    path: "/registration",
-    element: <Registration />,
+    path: "/home",
+    element: <Home className="page" />,
+    errorElement: <NotFound />,
   },
+
   {
     path: "/rules",
     element: <Rules />,

@@ -1,13 +1,37 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 
-import React from "react";
+import HeaderButton from "../buttons/HeaderButton";
 
-const Header = () => {
+const Header = ({isburgerMenu, setBurgerMenu, setHeaderBtn ,isHeaderBtn}) => {
+  const isBurgerMenuVisible = window.location.pathname === "/";
+  const heandleurgerMenu = () => {
+    setBurgerMenu(!isburgerMenu);
+
+  }
   return (
     <header>
-      <div className={styles.link}>
-        <Link to="/profile">
+      <div className={`${styles.link} ${
+          isBurgerMenuVisible ? styles.link_justifyContentEnd : ""
+        } ` } >
+        {!isBurgerMenuVisible && <button onClick={heandleurgerMenu} className={styles.header_burger}>
+          <svg
+           className={styles.burger_svg}
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+     
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>}
+
+        {!isBurgerMenuVisible && <Link to="/profile">
           <svg
             className={styles.profile_svg}
             width="55.000000"
@@ -49,7 +73,8 @@ const Header = () => {
               />
             </g>
           </svg>
-        </Link>
+        </Link>}
+        {isBurgerMenuVisible && <HeaderButton setHeaderBtn={setHeaderBtn} isHeaderBtn={isHeaderBtn} btnText={isHeaderBtn ? "Log in" : "Sign up"} />}
       </div>
     </header>
   );
